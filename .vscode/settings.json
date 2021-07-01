@@ -1,0 +1,22 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/Users/gurshamsingh/.local/share/virtualenvs/Server-OBvXwBCr/bin/python",
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#bf4747",
+      "titleBar.activeBackground": "#bf4747",
+      "titleBar.inactiveBackground": "#bf474799",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "titleBar.activeForeground": "#e7e7e7",
+      "activityBar.activeBackground": "#cc6d6d",
+      "activityBar.activeBorder": "#89d689",
+      "activityBar.background": "#cc6d6d",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#89d689",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#cc6d6d"
+    },
+    "window.title": "Backend-Project_expo",
+    "peacock.color": "#bf4747"
+}
