@@ -1,0 +1,141 @@
+@url=http://localhost:8000/api/
+@token= eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTYyNDg3ODc3NX0.wbJg7LLNwf08T1rgaeyPxbYGUbLW9eRkM4j_vvrpdOQ
+#GET ALL PROJECTS
+GET {{url}}projects/
+
+###
+
+#GET A SINGLE PROJECT
+GET {{url}}projects/10/
+
+
+###
+
+#DELETE A PROJECT
+DELETE {{url}}projects/9/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+###
+PUT {{url}}projects/13/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "projectName":"TESTING",
+  "url":"http://www.google.com/Interesting"
+}
+
+###
+
+#CREATE A PROJECT
+POST {{url}}projects/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "projectName":"project 1",
+  "url":"https://bradb345.github.io/project-1/"
+}
+###
+
+#CREATE A PROJECT
+POST {{url}}projects/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "projectName":"project 2",
+  "url":"https://project2-sei55-heros.netlify.app/"
+}
+
+###
+#CREATE A NEW USER
+POST {{url}}auth/register/
+content-type:application/json
+
+{
+"username":"brad",
+"email":"brad@email.com",
+"password":"pass",
+"passwordConfirmation":"pass"
+}
+
+###
+#LOGIN USER
+POST {{url}}auth/login/
+content-type:application/json
+
+{
+  "email":"admin@email.com",
+  "password":"admin"
+}
+
+###
+#MAKE A COMMENT
+
+POST {{url}}projects/1/comments/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "content":"this is a comment that im gonna delete (craig)"
+}
+
+###
+#DELETE COMMENT
+
+DELETE  {{url}}projects/1/comments/1/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+###
+#FAVORITE
+POST {{url}}projects/8/favorite/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+###
+#GET A SINGLE USER
+
+GET {{url}}auth/profile/2/
+
+###
+PUT {{url}}auth/profile/2/
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "username": "admin",
+  "password": "admin",
+  "passwordConfirmation": "admin",
+  "profileImage": "https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png",
+  "email": "admin@email.com",
+  "favorites": [],
+  "comments": [],
+  "createdProject": "",
+  "gacohort": "",
+  "linkedin": "",
+  "github": "",
+  "twitter": "",
+  "personalsite": "",
+  "instagram": "instagram",
+  "jobTitle": "Engineer"
+}
+
+
+###
+#GET ALL USERS
+
+GET {{url}}auth/profile/
+
+
+
+
+
+
+
+
+
+
+

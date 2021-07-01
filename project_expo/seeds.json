@@ -1,0 +1,21 @@
+[
+{
+  "model": "project_expo.projecttype",
+  "pk": 4,
+  "fields": {
+    "type": "game"
+  }
+},
+{
+  "model": "project_expo.project",
+  "pk": 8,
+  "fields": {
+    "project_name": "new Project10",
+    "url": "http://www.google.com",
+    "owner": 3,
+    "project_type": [
+      4
+    ]
+  }
+}
+]
